@@ -14,10 +14,10 @@ public class Therapist implements ICure {
 
     public void assignDoctor(Patient patient) {
         if (patient.treatmentPlan == 1) {
-            patient.setDoctor(new Dentist());
+            patient.setDoctor(new Surgeon());
 
         } else if (patient.treatmentPlan == 2) {
-            patient.setDoctor(new Surgeon());
+            patient.setDoctor(new Dentist());
 
         } else {
             patient.setDoctor(new Therapist());
