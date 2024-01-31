@@ -1,4 +1,4 @@
-###TeachMeSkills_C27_Lesson_8_HW
+#TeachMeSkills_C27_Lesson_8_HW
 
 We created a program to simulate the work of a clinic.
 The clinic has three doctors: a surgeon, a therapist and a dentist.
