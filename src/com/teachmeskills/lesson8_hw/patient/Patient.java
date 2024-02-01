@@ -10,6 +10,13 @@ public class Patient {
     private String name;
     private int treatmentPlan;
 
+    private ICure doctor;
+
+    public Patient(String name, int treatmentPlan) {
+        this.name = name;
+        this.treatmentPlan = treatmentPlan;
+    }
+
     public String getName() {
         String s = "Patient: " + name;
         return s;
@@ -19,12 +26,6 @@ public class Patient {
         this.name = name;
     }
 
-    private ICure doctor;
-
-    public Patient(String name, int treatmentPlan) {
-        this.name = name;
-        this.treatmentPlan = treatmentPlan;
-    }
 
     public int getTreatmentPlan() {
         return treatmentPlan;
