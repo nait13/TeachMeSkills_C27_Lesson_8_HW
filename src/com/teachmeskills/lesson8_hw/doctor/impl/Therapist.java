@@ -8,20 +8,20 @@ import com.teachmeskills.lesson8_hw.patient.Patient;
  */
 public class Therapist implements ICure {
 
-    public void treat() {
-        System.out.println("Therapist prescribes tablets!");
+    public void treat(Patient patient) {
+        System.out.println(patient.getName() + ", Therapist prescribes tablets!");
     }
 
     public void assignDoctor(Patient patient) {
-        if (patient.treatmentPlan == 1) {
+        if (patient.getTreatmentPlan() == 1) {
             patient.setDoctor(new Surgeon());
 
-        } else if (patient.treatmentPlan == 2) {
+        } else if (patient.getTreatmentPlan() == 2) {
             patient.setDoctor(new Dentist());
 
         } else {
             patient.setDoctor(new Therapist());
         }
-        patient.getDoctor().treat();
+        patient.getDoctor().treat(patient);
     }
 }

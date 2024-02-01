@@ -1,6 +1,7 @@
 package com.teachmeskills.lesson8_hw.doctor.impl;
 
 import com.teachmeskills.lesson8_hw.doctor.ICure;
+import com.teachmeskills.lesson8_hw.patient.Patient;
 
 /**
  * This class implements the ICure interface.
@@ -8,7 +9,7 @@ import com.teachmeskills.lesson8_hw.doctor.ICure;
 
 public class Dentist implements ICure {
     @Override
-    public void treat() {
-        System.out.println("The dentist treats teeth !");
+    public void treat(Patient patient) {
+        System.out.println(patient.getName() + ", The dentist treats teeth!");
     }
 }

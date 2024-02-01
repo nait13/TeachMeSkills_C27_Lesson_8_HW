@@ -16,6 +16,7 @@ public class Runner {
 
         therapist.assignDoctor(patient1);
         therapist.assignDoctor(patient3);
+        therapist.assignDoctor(patient2);
 
 
     }

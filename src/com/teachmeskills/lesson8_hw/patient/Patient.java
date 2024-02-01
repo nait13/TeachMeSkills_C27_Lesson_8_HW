@@ -7,9 +7,19 @@ import com.teachmeskills.lesson8_hw.doctor.ICure;
  */
 
 public class Patient {
-    public String name;
-    public int treatmentPlan;
-    public ICure doctor;
+    private String name;
+    private int treatmentPlan;
+
+    public String getName() {
+        String s = "Patient: " + name;
+        return s;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private ICure doctor;
 
     public Patient(String name, int treatmentPlan) {
         this.name = name;
